@@ -104,9 +104,6 @@
       qwdq
     </pre>
 
-    <!--la etiqueta iframe sirve para incrustar videos de youtube(videos en general) en mi pagina-->
-    <!--<iframe width="350" height="220" src="https://www.youtube.com/embed/3gskHksi2Yc" title="Dreamcast Intro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-
     <!--etiqueta div y span-->
 
     <!--en la etiqueta div el texto se coloca con saltos de linea-->
@@ -124,9 +121,128 @@
       paste.
     </p>
 
-    <p>
+    <p id="prueba">
       Gradually add the <span class="ingredient">olive oil</span> while running
       the blender slowly.
     </p>
+
+    <!-- la diferencia entre id y class, es que id debe ser unico por elemento, mientras que class se puede reutilizar-->
+
+    <h2>listas en html</h2>
+    <ul>
+      <li>esto es una lista?</li>
+      <li>si esto es una lista</li>
+      <li>una lista desordenada</li>
+    </ul>
+
+    <ol>
+      <li>esto es una lista ordena</li>
+      <li>una lista numerica</li>
+      <li>leche</li>
+      <li>huevos</li>
+      <li>mantequilla</li>
+    </ol>
+
+    <dl>
+      <dt>esto es una lista con descripciones</dt>
+      <dd>- esto es una descripcion</dd>
+      <dt>siguiente descripcion</dt>
+      <dd>- esto es una otra descripcion</dd>
+    </dl>
+
+    <!--listas anidadas-->
+    <ul>
+      <li>esto es una lista anidada</li>
+      <ul>
+        <li>esto es lista dentro de otra lista</li>
+        <li>este contenido es dentro de un alista anidada</li>
+      </ul>
+    </ul>
+
+    <!-- uso de la etiqueta table (tablas)-->
+
+    <!--
+    table: establece el espacio para la tabla, seria como el div de la tabla
+    caption: describe el proposito de la tabla
+    scope(obsoleto, se hace ahora con css): srive para asociar las cabeceras con las celdas de la tabla
+    tr: define la filas de la tabla
+    th: define las celdas
+    td: representa un celda dentro de una tabla
+    thead: define las celdas de encabezado de la tabla
+    tbody: representa el cuerpo de la tabla, donde se cuentran los datos
+    tfoot: representa el pie de la tabla, el contenido se mostrara al final de la tabla
+    -->
+
+    <hr />
+    <h3>tablas</h3>
+    <table>
+      <caption>
+        esto es una tabla
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">nombre</th>
+          <th scope="col">edad</th>
+          <th scope="col">correo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">juan</th>
+          <td>25 años</td>
+          <td>diego@gmail.com</td>
+        </tr>
+        <tr>
+          <th scope="row">ana</th>
+          <td>26 años</td>
+          <td>ana@gmail.com</td>
+        </tr>
+        <tr>
+          <th scope="row">pedro</th>
+          <td>23 años</td>
+          <td>pedro@gmail.com</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row" colspan="3">esto seria como el footer de la tabla</th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr />
+    <h2>embedding media</h2>
+    <!--embedding media-->
+    <!--iframe-->
+
+    <!--la etiqueta iframe sirve para incrustar contenido disponible en internet, videos de youtube, ubicaciones de google maps etc etc en mi pagina-->
+    <iframe
+      width="350"
+      height="220"
+      src="https://www.youtube.com/embed/3gskHksi2Yc"
+      title="Dreamcast Intro"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.876127579132!2d-110.30119499999999!3d24.140988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86afd31eb75ecfa3%3A0x5a52e95c937823c!2sK%20Boneless%20(Los%20Olivos)!5e0!3m2!1ses!2smx!4v1770758932829!5m2!1ses!2smx"
+      width="600"
+      height="300"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <p>estos son iframes</p>
   </body>
 </html>
