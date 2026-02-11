@@ -268,5 +268,102 @@
       <figcaption>you win:</figcaption>
       <audio controls src="/assets/audio/levelpass.m4a"></audio>
     </figure>
+
+    <hr />
+    <h2>semantica</h2>
+
+    <!-- cambios en el texto-->
+
+    <del
+      >la etiqueta del "elimina el texto" pone una raya sobre el, indicando que
+      ese texto ya no es util</del
+    >
+    <br />
+
+    <s> este texto no es muy relevante </s>
+
+    <br />
+
+    <ins> la etiqueta ins representa texto que fue añadido al documento </ins>
+
+    <br />
+
+    <p>
+      <abbr title="Hyper Text Markup Lenguage">HTML</abbr> es un lenguaje de
+      marcado de la web
+    </p>
+
+    <!-- citado semantico-->
+
+    <h2>citado semantico</h2>
+
+    <cite
+      >cite: citar el titulo de una obra(libro, pelicaulas, videojuegos....)
+    </cite>
+    <br />
+    <span>span: citar el nombre de una persona</span>
+    <br />
+    <p>q:<q>citar una frase o mensaje entrecomillado</q></p>
+    <br />
+    <blockquote>el uso de blockquote es para citas en bloque</blockquote>
+    <br />
+    <i
+      ><a href="https://residentevil.fandom.com/es/wiki/Resident_Evil_Wiki"
+        >Resident Evil wiki</a
+      ></i
+    >
+    <br />
+    <h2>direccion</h2>
+    <!--la etiqueta adress, como su nombre lo dice, es para poner un direccion-->
+    <address>
+      <a href="diegovegaprogra@gmail.com">📧diegovegaprogra@gmail.com</a>
+      <br />
+      <a href="">📞6122026246</a>
+    </address>
+
+    <p>esto es un texto en <dfn title="dentro de la etiqueta dfn">html</dfn></p>
+    <p>esto es una frase con <abbr title="abreviar">abbr</abbr></p>
+    <!--la diferencia entre dfn y abbr, es que abbr es para abreviar un palabra
+    mientras que dfn es para abreviar una palabra que mas adelante se va a detallar-->
+
+    <br />
+    <h2>etiquetas de diseño</h2>
+
+    <strong>etiqueta section</strong>
+    <section style="background-color: aquamarine">
+      <!-- CSS inline-->
+      la etiqueta section es como el div pero con semantica. quiere decir es
+      para una seccion "de interes" casos de uso: servicios, testimonios,
+      contactos etc etc....
+    </section>
+    <br />
+    <article>
+      la etiqueta <strong>article</strong> sirve para definir un contenido
+      autonomo y de importancia
+      <ul>
+        <li>mejora el SEO</li>
+        <li>puede reutilizarse en ota parte del sitio o incluso otra pagina</li>
+      </ul>
+    </article>
+
+    <aside id="aside">
+      la etiqueta <strong>aside</strong> sirve para contenido secundario o
+      lateral relacionado con el contenido principal
+    </aside>
+
+    <!-- CSS internal-->
+    <style>
+      #aside {
+        background-color: blanchedalmond;
+      }
+    </style>
+
+    <script>
+      console.log("hola mundo");
+    </script>
+
+    <script>
+      alert("hola mundo desde un alert");
+    </script>
   </body>
 </html>
