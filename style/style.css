@@ -1,3 +1,14 @@
+#titulo {
+  position: fixed;
+  background-color: rgb(179, 196, 230);
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+
 span.ingredient {
   color: red;
 }
@@ -51,9 +62,20 @@ tfoot td {
   font-weight: bold;
 }
 
-.container{
-  width: 50wh;
-  height: 50vh;
-  background-color: aquamarine;
-  margin: 0;
+#box {
+  border: 5px solid black;
+  width: 250px;
+  height: 250px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(127, 178, 255);
+  position: absolute; /*fixed se utiliza para posiciones un contenido y dejarlo estatico en la pagina sin importa el scroll*/
+  inset: 0;
+  margin: auto;
+  text-align: center;
 }
